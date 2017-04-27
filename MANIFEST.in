@@ -1,0 +1,4 @@
+include *.cfg *.rst *.in
+graft src/seraing/urban
+graft docs
+global-exclude *pyc

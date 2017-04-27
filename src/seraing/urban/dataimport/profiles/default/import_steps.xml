@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+
+ <import-step
+    id="seraing.urban.dataimport-seraingUrbawebImport"
+    handler="seraing.urban.dataimport.importer.importSeraingUrbaweb"
+    title="Urbaweb import for Seraing">
+  Urbaweb import for Seraing
+ </import-step>
+
+</import-steps>
