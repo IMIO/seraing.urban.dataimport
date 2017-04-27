@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="seraing.urban.dataimport">
+
+
+    <adapter
+        for="imio.urban.dataimport.interfaces.IImportSettingsForm"
+        factory=".settings.SeraingAcropoleImporterFromImportSettings"
+        provides="imio.urban.dataimport.acropole.interfaces.IAcropoleDataImporter"
+        name="seraing Acropole licences"
+    />
+
+    <adapter
+        for="seraing.urban.dataimport.acropole.importer.LicencesImporter"
+        factory=".importer.SeraingAcropoleMapping"
+        provides="imio.urban.dataimport.interfaces.IObjectsMapping"
+        name="objects mapping"
+    />
+
+    <adapter
+        for="seraing.urban.dataimport.acropole.importer.LicencesImporter"
+        factory=".importer.SeraingAcropoleValuesMapping"
+        provides="imio.urban.dataimport.interfaces.IValuesMapping"
+        name="values mapping"
+    />
+
+
+</configure>
